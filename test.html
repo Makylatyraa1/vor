@@ -1,0 +1,976 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="OdP87ycSE7hBSY0kEkxFx7vL3nHK34r2T0pCkeEV">
+
+    <title>Indigo</title>
+    <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+<!-- MDB -->
+
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="/css/mdb/mdb.min.css">
+<link rel="stylesheet" href="/css/mdb/modules/stepper.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/jquery.lazy.min.js"></script>
+<script>
+    $(function() {
+        $('.lazy').Lazy();
+    });
+</script>
+
+<style>INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}@keyframes onautofillstart{}@keyframes onautofillcancel{}</style></head>
+<body style="background-color: #eee">
+<div class="container-fluid p-0 d-print-none">
+    <div class="col-sm-12 p-0 mb-3">
+        <!-- Navbar -->
+<div class="container-fluid navbar-light bg-light mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: none">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid">
+                        <!-- Toggle button -->
+                        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <!-- Collapsible wrapper -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Navbar brand -->
+                        
+                        <!-- Left links -->
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://indigo.kaspiya.ru/product/filter">Товары</a>
+                                </li>
+                                                                                                
+                                <li class="nav-item">
+                                    <a class="nav-link " href="https://indigo.kaspiya.ru/tasks">Задания</a>
+                                </li>
+                                                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://indigo.kaspiya.ru/users">Пользователи</a>
+                                    </li>
+                                                                                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://indigo.kaspiya.ru/trademarks">Торговые марки</a>
+                                    </li>
+                                                                                                                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://indigo.kaspiya.ru/report">Отчеты</a>
+                                    </li>
+                                                                                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://indigo.kaspiya.ru/fitting">Сборки</a>
+                                    </li>
+                                                                
+                                                                    <li class="nav-item">
+                                        <a class="nav-link " href="https://indigo.kaspiya.ru/statistic">Статистика</a>
+                                    </li>
+                                                                
+                            </ul>
+                            <!-- Left links -->
+                        </div>
+                        <!-- Collapsible wrapper -->
+
+                        <!-- Right elements -->
+                        <div class="d-flex align-items-center">
+                            <!-- Icon -->
+                        
+
+                        <!-- Notifications -->
+                            
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item" href="#">Some news</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another news</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+
+                            <!-- Avatar -->
+                            <a class="dropdown-toggle d-flex align-items-center hidden-arrow text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                
+                                Таня
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                
+                                <li>
+                                    <form action="https://indigo.kaspiya.ru/logout" method="POST">
+                                        <button class="dropdown-item" type="submit">Выход</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Right elements -->
+                    </div>
+                    <!-- Container wrapper -->
+                </nav>
+                <!-- Navbar -->
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+<div id="alerts" class="position-fixed bottom-0 left-2 p-2" style="z-index: 1">
+
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <h1>Фильтрация</h1>
+                                    <p class="">Найдено: 1</p>
+                            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="card">
+                    <div class="card-body">
+                                                    <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                    <tr><th>#</th>
+                                    <th></th>
+                                    <th>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                Название
+                                            </div>
+                                            <div class="col-sm-12">
+                                                Комплектация
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>Остаток</th>
+                                    <th style="min-width: 230px">Идентификаторы</th>
+                                    <th></th>
+                                    </tr></thead>
+                                    <tbody>
+                                                                            <tr id="p-136214">
+                                            <td>
+                                                136214
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <span class="badge rounded-pill bg-link" style="padding-left: 0px">
+                                                            <a href="https://indigo.kaspiya.ru/task/4285">#4285</a>
+                                                        </span>
+                                                                                                                                                                                                                            </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                                                                    <img src="https://cdn3.static1-sima-land.com/items/2830052/0/140.jpg?v=1522131544" alt="Картинка приложения" style="max-width: 50px;">
+                                                                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="Монета &quot;10 рублей 2003 Муром&quot;"></i></button> <span>Монета "10 рублей 2003 Муром"</span>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="Монета &quot;10 рублей 2003 Муром&quot;, 1 шт"></i></button> <span>Монета "10 рублей 2003 Муром", 1 шт</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        0 шт
+                                                    </div>
+                                                                                                            <div class="col-sm-12">
+                                                            03:31:59 29.06.2022
+                                                        </div>
+                                                                                                    </div>
+                                            </td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        Брэнд: <span class="font-weight-bold">Kangaeru</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        Статус: <span class="font-weight-bold">Получена номенклатура</span>
+                                                    </div>
+                                                    <div class="col-sm-6 d-flex align-items-center">
+                                                        <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="2830052"></i></button> Sima Id: <span style="padding-left: 5px" class="font-weight-bold">2830052</span>
+                                                    </div>
+                                                    <div class="col-sm-6 d-flex align-items-center">
+                                                        <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="3334142"></i></button> Sima Sid: <span style="padding-left: 5px" class="font-weight-bold">3334142</span>
+                                                    </div>
+                                                                                                            <div class="col-sm-6 d-flex align-items-center">
+                                                            <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="FBS136214-3"></i></button> Артикул: <span style="padding-left: 5px" class="font-weight-bold">FBS136214-3</span>
+                                                        </div>
+                                                                                                                                                                <div class="col-sm-6 d-flex align-items-center">
+                                                            <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="40070426"></i></button> imtId: <span style="padding-left: 5px" class="font-weight-bold">40070426</span>
+                                                        </div>
+                                                                                                                                                                <div class="col-sm-6 d-flex align-items-center">
+                                                            <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="2016638334002"></i></button> Bcod: <span style="padding-left: 5px" class="font-weight-bold">2016638334002</span>
+                                                        </div>
+                                                                                                                                                                <div class="col-sm-6 d-flex align-items-center">
+                                                            <button class="copy-info btn btn-link btn-floating btn-sm ml-1"><i class="far fa-clone" info="53735484"></i></button> nmId: <span style="padding-left: 5px" class="font-weight-bold">53735484</span>
+                                                        </div>
+                                                    
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="row d-flex justify-content-start">
+                                                    <button class="btn btn-success btn-floating m-1" data-mdb-toggle="modal" data-mdb-target="#product-136214"><i class="fas fa-info"></i></button>
+                                                                                                            <button type="button" class="btn btn-warning btn-floating m-1 update-wb-product" productid="136214">
+                                                            
+                                                            <i class="fas fa-cloud-upload-alt" productid="136214"></i>
+                                                        </button>
+                                                                                                        
+                                                    <button class="btn btn-warning btn-floating m-1 set-deprecated" productid="136214" isdeprecated="0">
+
+                                                                                                                    <i class="fas fa-minus" productid="136214" isdeprecated="0"></i>
+                                                                                                            </button>
+                                                    <a class="btn btn-primary btn-floating m-1" href="https://sima-land.ru/3334142/moneta-10-rubley-2003-murom/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                                                    <button class="btn btn-danger btn-floating m-1 set-best-sailed" productid="136214" isbestsailed="0">
+                                                        <i class="fas fa-dollar-sign" productid="136214" isbestsailed="0"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                                                                                                </tbody>
+                                </table>
+                            </div>
+                                                            <div class="modal fade" id="product-136214" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen h-auto">
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <div class="row w-100">
+                    <div class="col-sm-12 d-flex justify-content-start">
+                        <h5 class="modal-title" id="exampleModalLabel">Монета "10 рублей 2003 Муром"</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="text-muted">Дом / Монеты сувенирные</span>
+                    </div>
+                </div>
+            </div>
+            <form action="https://indigo.kaspiya.ru/product/edit" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="page" value="1">
+                <input type="hidden" name="id" value="136214">
+                <input type="hidden" name="isHaveNew" value="">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <h5>Информация с SimaLand</h5>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-end align-items-center mb-3">
+                            <span style="margin-right: 15px;">Получена номенклатура</span>
+                            <a style="margin-right: 15px;" class="btn btn-primary btn-floating" href="https://sima-land.ru/3334142/moneta-10-rubley-2003-murom/" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                            <button type="submit" class="btn btn-success">Сохранить</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-outline">
+                                <input type="text" id="equipment" class="form-control active" name="equipment" value="Монета &quot;10 рублей 2003 Муром&quot;, 1 шт">
+                                <label class="form-label" for="equipment" style="margin-left: 0px;">Комплектация</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-outline">
+                                <input type="text" id="stuff" class="form-control active" name="stuff" value="Металл">
+                                <label class="form-label" for="stuff" style="margin-left: 0px;">Состав</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                                                    <div class="col-sm-2 mb-3">
+                                <div class="form-outline">
+                                    <input type="text" id="depth" class="form-control active" name="depth" value="0">
+                                    <label class="form-label" for="depth" style="margin-left: 0px;">Длина</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+                            <div class="col-sm-2 mb-3">
+                                <div class="form-outline">
+                                    <input type="text" id="width" class="form-control active" name="width" value="0">
+                                    <label class="form-label" for="width" style="margin-left: 0px;">Ширина</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+                            <div class="col-sm-2 mb-3">
+                                <div class="form-outline">
+                                    <input type="text" id="height" class="form-control active" name="height" value="0">
+                                    <label class="form-label" for="height" style="margin-left: 0px;">Высота</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+
+                            <div class="col-sm-2 mb-3">
+                                <div class="form-outline">
+                                    <input type="text" id="depth" class="form-control active" name="box_depth" value="3">
+                                    <label class="form-label" for="depth" style="margin-left: 0px;">Длина упаковки</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+                            <div class="col-sm-2 mb-3">
+                                <div class="form-outline">
+                                    <input type="text" id="width" class="form-control active" name="box_width" value="3">
+                                    <label class="form-label" for="width" style="margin-left: 0px;">Ширина упаковки</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+                            <div class="col-sm-2 mb-3">
+                                <div class="form-outline">
+                                    <input type="text" id="height" class="form-control active" name="box_height" value="0">
+                                    <label class="form-label" for="height" style="margin-left: 0px;">Высота упаковки</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="form-outline">
+                                <input type="text" id="name" class="form-control active" name="name" value="Монета &quot;10 рублей 2003 Муром&quot;">
+                                <label class="form-label" for="name" style="margin-left: 0px;">Наименование</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                        <div class="col-sm-2 mb-3">
+                            <div class="form-outline">
+                                <input type="text" class="form-control active" id="price_max" name="price_max" value="274">
+                                <label class="form-label" for="price_max" style="margin-left: 0px;">Цена</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                        <div class="col-sm-2 mb-3">
+                            <div class="form-outline">
+                                <input type="text" class="form-control active" id="minimum_order_quantity" name="minimum_order_quantity" value="1">
+                                <label class="form-label" for="minimum_order_quantity" style="margin-left: 0px;">Мин. кол-во</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                        <div class="col-sm-2 mb-3">
+                            <div class="form-outline">
+                                <input type="text" class="form-control active" id="made_in" name="made_in" value="Россия">
+                                <label class="form-label" for="made_in" style="margin-left: 0px;">Страна</label>
+                            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                        </div>
+                                            </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-12">
+                            <h5>Обязательные поля для Wildberries</h5>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        
+                                                                                    <div class="col-sm-4 mb-3">
+                                    <label class="form-label" for="Бренд">Бренд  *</label>
+                                    <select class="js-example-basic-single-modal select2-hidden-accessible" dropdownparrent="product-136214" directory="/brands" name="fields[1][]" option="Бренд" subject="Монеты сувенирные" productid="136214" fieldid="1" id="fields-136214-1" data-select2-id="select2-data-fields-136214-1" multiple="" tabindex="-1" aria-hidden="true">
+                                                                                                                                    <option selected="" value="Kangaeru" data-select2-id="select2-data-2-hd23">Kangaeru</option>
+                                                                                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-1-hsgz" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-fields-136214-1-container"><li class="select2-selection__choice" title="Kangaeru" data-select2-id="select2-data-3-dv43"><button type="button" class="select2-selection__choice__remove" tabindex="-1" title="Remove item" aria-label="Remove item" aria-describedby="select2-fields-136214-1-container-choice-os8l-Kangaeru"><span aria-hidden="true">×</span></button><span class="select2-selection__choice__display" id="select2-fields-136214-1-container-choice-os8l-Kangaeru">Kangaeru</span></li></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-fields-136214-1-container" placeholder="" style="width: 0.75em;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                    <div class="form-outline w-100">
+                                        <input type="text" id="Комплектация" name="fields[4]" class="form-control border-primary active" value="Монета &quot;10 рублей 2003 Муром&quot;. 1 шт">
+                                        <label class="form-label" for="Комплектация" style="margin-left: 0px;">Комплектация  *</label>
+                                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                </div>
+                                                                                                                <div class="col-sm-4 mb-3">
+                                    <label class="form-label" for="Тнвэд">Тнвэд  *</label>
+                                    <select class="js-example-basic-single-modal select2-hidden-accessible" dropdownparrent="product-136214" directory="/tnved" name="fields[5][]" option="Тнвэд" subject="Монеты сувенирные" productid="136214" fieldid="5" id="fields-136214-5" data-select2-id="select2-data-fields-136214-5" multiple="" tabindex="-1" aria-hidden="true">
+                                                                                                                                    <option selected="" value="8306290009" data-select2-id="select2-data-5-t6oa">8306290009</option>
+                                                                                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-4-52zb" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-fields-136214-5-container"><li class="select2-selection__choice" title="8306290009" data-select2-id="select2-data-6-x181"><button type="button" class="select2-selection__choice__remove" tabindex="-1" title="Remove item" aria-label="Remove item" aria-describedby="select2-fields-136214-5-container-choice-gosy-8306290009"><span aria-hidden="true">×</span></button><span class="select2-selection__choice__display" id="select2-fields-136214-5-container-choice-gosy-8306290009">8306290009</span></li></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-fields-136214-5-container" placeholder="" style="width: 0.75em;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                    <div class="form-outline w-100">
+                                        <input type="text" id="Наименование" name="fields[7]" class="form-control border-primary active" value="Монета &quot;10 рублей 2003 Муром&quot;">
+                                        <label class="form-label" for="Наименование" style="margin-left: 0px;">Наименование  *</label>
+                                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                </div>
+                                                                        </div>
+                                            <div class="row mb-3">
+                            <div class="col-sm-12">
+                                <h5>Не обязательные поля для Wildberries</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <textarea class="form-control w-100" id="Описание" name="fields[2]" rows="1"></textarea>
+                                            <label class="form-label" for="textAreaExample" style="margin-left: 0px;">Описание</label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Ключевые слова" name="fields[3]" class="form-control border-primary" value="">
+                                            <label class="form-label" for="Ключевые слова" style="margin-left: 0px;">Ключевые слова  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Высота предмета" name="fields[30]" class="form-control border-primary" value="">
+                                            <label class="form-label" for="Высота предмета" style="margin-left: 0px;">Высота предмета  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Глубина предмета" name="fields[31]" class="form-control border-primary" value="">
+                                            <label class="form-label" for="Глубина предмета" style="margin-left: 0px;">Глубина предмета  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Ширина предмета" name="fields[9]" class="form-control border-primary" value="">
+                                            <label class="form-label" for="Ширина предмета" style="margin-left: 0px;">Ширина предмета  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Глубина упаковки" name="fields[23]" class="form-control border-primary active" value="0">
+                                            <label class="form-label" for="Глубина упаковки" style="margin-left: 0px;">Глубина упаковки  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3">
+                                        <label class="form-label" for="Тип подарка">Тип подарка  </label>
+                                        <select class="js-example-basic-single-modal select2-hidden-accessible" dropdownparrent="product-136214" directory="/ext" name="fields[130][]" option="Тип подарка" id="fields-136214-130" multiple="" data-select2-id="select2-data-fields-136214-130" tabindex="-1" aria-hidden="true">
+                                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-7-shae" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-fields-136214-130-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-fields-136214-130-container" placeholder="" style="width: 0.75em;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3">
+                                        <label class="form-label" for="Назначение подарка">Назначение подарка  </label>
+                                        <select class="js-example-basic-single-modal select2-hidden-accessible" dropdownparrent="product-136214" directory="/ext" name="fields[16][]" option="Назначение подарка" id="fields-136214-16" multiple="" data-select2-id="select2-data-fields-136214-16" tabindex="-1" aria-hidden="true">
+                                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-8-n2b0" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-fields-136214-16-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-fields-136214-16-container" placeholder="" style="width: 0.75em;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3">
+                                        <label class="form-label" for="Повод">Повод  </label>
+                                        <select class="js-example-basic-single-modal select2-hidden-accessible" dropdownparrent="product-136214" directory="/ext" name="fields[15][]" option="Повод" id="fields-136214-15" multiple="" data-select2-id="select2-data-fields-136214-15" tabindex="-1" aria-hidden="true">
+                                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-9-xzdy" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-fields-136214-15-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-fields-136214-15-container" placeholder="" style="width: 0.75em;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Вес товара с упаковкой (г)" name="fields[17]" class="form-control border-primary active" value="8">
+                                            <label class="form-label" for="Вес товара с упаковкой (г)" style="margin-left: 0px;">Вес товара с упаковкой (г)  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Вес товара без упаковки (г)" name="fields[51]" class="form-control border-primary" value="">
+                                            <label class="form-label" for="Вес товара без упаковки (г)" style="margin-left: 0px;">Вес товара без упаковки (г)  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Ширина упаковки" name="fields[25]" class="form-control border-primary active" value="0">
+                                            <label class="form-label" for="Ширина упаковки" style="margin-left: 0px;">Ширина упаковки  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3 d-flex align-items-end">
+                                        <div class="form-outline w-100">
+                                            <input type="text" id="Высота упаковки" name="fields[26]" class="form-control border-primary active" value="0">
+                                            <label class="form-label" for="Высота упаковки" style="margin-left: 0px;">Высота упаковки  </label>
+                                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                                    </div>
+                                                                                                                                <div class="col-sm-4 mb-3">
+                                        <label class="form-label" for="Материал изделия">Материал изделия  </label>
+                                        <select class="js-example-basic-single-modal select2-hidden-accessible" dropdownparrent="product-136214" directory="/ext" name="fields[13][]" option="Материал изделия" id="fields-136214-13" multiple="" data-select2-id="select2-data-fields-136214-13" tabindex="-1" aria-hidden="true">
+                                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-10-qmlv" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-fields-136214-13-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-fields-136214-13-container" placeholder="" style="width: 0.75em;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                                                                    </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-outline">
+                                    <input readonly="" type="text" class="form-control active" value="1043">
+                                    <label class="form-label" style="margin-left: 0px;">Цена</label>
+                                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 8px;"></div><div class="form-notch-trailing"></div></div></div>
+                            </div>
+                        </div>
+                                    </div>
+                <div class="modal-footer">
+                    <input type="submit" name="is_update" class="btn btn-warning" value="Сохранить и обновить">
+                    <button type="submit" class="btn btn-success">Сохранить</button>
+                    <button type="button" class="btn btn-danger" data-mdb-dismiss="modal">
+                        Закрыть
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+                                                                        </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <h5 class="card-title">Фильтр</h5>
+            </div>
+        </div>
+        <form action="https://indigo.kaspiya.ru/product/filter" method="POST">
+            <div class="row mb-3">
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="id" name="id" class="form-control" value="">
+                        <label class="form-label" for="id" style="margin-left: 0px;">Id</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 18.4px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="barcode" name="barcode" class="form-control" value="">
+                        <label class="form-label" for="barcode" style="margin-left: 0px;">Barcode</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 55.2px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="nm_id" name="nm_id" class="form-control" value="">
+                        <label class="form-label" for="nm_id" style="margin-left: 0px;">nmId</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 36.8px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="imt_id" name="imt_id" class="form-control" value="">
+                        <label class="form-label" for="imt_id" style="margin-left: 0px;">imtId</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 37.6px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="sima_sid" name="sima_sid" class="form-control" value="">
+                        <label class="form-label" for="sima_sid" style="margin-left: 0px;">Артикул Sima</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="articul" name="articul" class="form-control active" value="FBS136214-3">
+                        <label class="form-label" for="articul" style="margin-left: 0px;">Артикул</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 56.8px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-outline">
+                        <input type="text" id="name" name="name" class="form-control" value="">
+                        <label class="form-label" for="name" style="margin-left: 0px;">Название</label>
+                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 66.4px;"></div><div class="form-notch-trailing"></div></div></div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="is_error" id="is_error">
+                        <label class="form-check-label" for="is_error">
+                            С ошибкой
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="is_empty_nm_id" id="is_empty_nm_id">
+                        <label class="form-check-label" for="is_empty_nm_id">
+                            Без номенклатуры
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="is_delay_update_stocks" id="is_delay_update_stocks">
+                        <label class="form-check-label" for="is_delay_update_stocks">
+                            Не обновлены остатки
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" name="price_is_bad" id="price_is_bad">
+                        <label class="form-check-label" for="price_is_bad">
+                            Низкая цена
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-end">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-success">Найти</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(() => {
+            $('.update-wb-product').on('click', async event => {
+                const productId = event.target.attributes.productid.value;
+                $(`#additional-${productId}`).html(`<div class="alert alert-primary" >Отправка</div>`);
+                try {
+                    $.ajax({
+                        url: "https://indigo.kaspiya.ru/api/wb/update-wb-card",
+                        data: {
+                            productId
+                        },
+                        method: 'POST',
+                        success: (data, result) => {
+                            if(data.error === null) {
+                                addAlert(`Успешно отправлено товар №${productId}`);
+                                $(`#additional-${productId}`).html(`<div class="alert alert-success" >Успешно отправлено</div>`);
+                            } else {
+                                addAlert(`Произошла ошибка товар №${productId}: ${data.error}`, "danger");
+                                $(`#additional-${productId}`).html(`<div class="alert alert-danger" >Произошла ошибка: ${data.error}</div>`);
+                            }
+                        },
+                        error: (er) => {
+                            console.log('er');
+                            console.log(er);
+                            addAlert("Произошла ошибка запроса №"+ productId, "danger");
+                            $(`#additional-${productId}`).html(`<div class="alert alert-success" >Произошла ошибка запроса</div>`);
+                        }
+                    })
+                } catch (error) {
+                    console.log('error', error);
+                }
+            });
+            $('.create-wb-product').on('click', async event => {
+                const productId = event.target.attributes.productid.value;
+                $(`#additional-${productId}`).html(`<div class="alert alert-primary" >Отправка</div>`);
+                try {
+                    $.ajax({
+                        url: "https://indigo.kaspiya.ru/api/wb/create-wb-card",
+                        data: {
+                            productId
+                        },
+                        method: 'POST',
+                        success: (data, result) => {
+                            if(data.error === null) {
+                                addAlert(`Успешно отправлено товар №${productId}`);
+                                $(`#additional-${productId}`).html(`<div class="alert alert-success" >Успешно отправлено</div>`);
+                            } else {
+                                addAlert(`Произошла ошибка товар №${productId}: ${data.error}`, "danger");
+                                $(`#additional-${productId}`).html(`<div class="alert alert-danger" >Произошла ошибка: ${data.error}</div>`);
+                            }
+                        },
+                        error: (er) => {
+                            console.log('er');
+                            console.log(er);
+                            addAlert("Произошла ошибка запроса №"+ productId, "danger");
+                            $(`#additional-${productId}`).html(`<div class="alert alert-success" >Произошла ошибка запроса</div>`);
+                        }
+                    })
+                } catch (error) {
+                    console.log('errro');
+                }
+            });
+        });
+        $('.set-deprecated').on('click', ({ target }) => {
+            const { attributes } = target;
+
+            if (attributes.isDeprecated === undefined) {
+                return;
+            }
+            if (attributes.productid === undefined) {
+                return;
+            }
+
+            const productId = attributes.productid.value;
+            let isDeprecated = Number(attributes.isdeprecated.value);
+            let button, i;
+
+            if (target.tagName === 'I') {
+                i = target;
+                button = target.parentElement;
+            } else {
+                i = target.childList[0];
+                button = target;
+            }
+
+            if (isDeprecated === 1) {
+                isDeprecated = 0;
+                button.classList.remove('btn-success');
+                button.classList.add('btn-warning');
+                i.classList.remove('fa-check');
+                i.classList.add('fa-minus');
+                $(`.product-${productId}`).removeClass('table-warning');
+            } else {
+                isDeprecated = 1;
+                button.classList.remove('btn-warning');
+                button.classList.add('btn-success');
+                i.classList.remove('fa-minus');
+                i.classList.add('fa-check');
+                $(`.product-${productId}`).addClass('table-warning');
+            }
+
+            i.attributes.isdeprecated.value = isDeprecated;
+            button.attributes.isdeprecated.value = isDeprecated;
+
+            $.ajax({
+                method: 'post',
+                url: "https://indigo.kaspiya.ru/api/product/set-deprecated",
+                data: {
+                    productId,
+                    isDeprecated
+                },
+                success: result => {
+                    if (result.error) {
+                        return addAlert(result.error, 'danger');
+                    }
+                    return addAlert('Сохранено');
+                }
+            });
+        });
+        $('.set-best-sailed').on('click', ({ target }) => {
+            const { attributes } = target;
+
+            if (attributes.isbestsailed === undefined) {
+                return;
+            }
+            if (attributes.productid === undefined) {
+                return;
+            }
+
+            const productId = attributes.productid.value;
+            let isBestSailed = Number(attributes.isbestsailed.value);
+            let button, i;
+
+            if (target.tagName === 'I') {
+                i = target;
+                button = target.parentElement;
+            } else {
+                i = target.childList[0];
+                button = target;
+            }
+
+            if (isBestSailed === 1) {
+                isBestSailed = 0;
+                button.classList.remove('btn-success');
+                button.classList.add('btn-danger');
+                $(`.product-${productId}`).removeClass('table-warning');
+            } else {
+                isBestSailed = 1;
+                button.classList.remove('btn-danger');
+                button.classList.add('btn-success');
+                $(`.product-${productId}`).addClass('table-warning');
+            }
+
+            i.attributes.isbestsailed.value = isBestSailed;
+            button.attributes.isbestsailed.value = isBestSailed;
+
+            $.ajax({
+                method: 'post',
+                url: "https://indigo.kaspiya.ru/api/product/set-best-sailed",
+                data: {
+                    productId,
+                    isBestSailed
+                },
+                success: result => {
+                    if (result.error) {
+                        return addAlert(result.error, 'danger');
+                    }
+                    return addAlert('Сохранено');
+                }
+            });
+        });
+    </script>
+        </div>
+    </div>
+</div>
+
+<!-- MDB -->
+<script type="text/javascript" src="/js/mdb/mdb.min.js"></script>
+<script type="text/javascript" src="/js/mdb/modules/stepper.rtl.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $(document).ready(function() {
+            const initSelect2 = (item) => {
+                try  {
+                    $(item).select2({
+                        width: '100%',
+                        multiple: true,
+                        dropdownParent: `#${item.attributes.dropdownparrent.value}`,
+                        ajax: {
+                            url: '/api/wb/directory/filter',
+                            method: 'POST',
+                            data: function(params) {
+                                let genders = null;
+                                try {
+                                    genders = $(`#fields-${item.attributes.productid.value}-34`).val();
+                                } catch (e) {
+                                    console.error(e);
+                                }
+                                if(genders !== undefined && genders !== null && Number(item.attributes.fieldid.value) === 48) {
+                                    if (genders.length > 0) {
+                                        return {
+                                            option: item.attributes.option.value,
+                                            dictionary: item.attributes.directory.value,
+                                            subject: item.attributes.subject.value,
+                                            search: params.term,
+                                            kind: genders[0]
+                                        }
+                                    } else {
+                                        addAlert('Выберите пол', 'warning');
+                                        return {
+                                            option: item.attributes.option.value,
+                                            dictionary: item.attributes.directory.value,
+                                            subject: item.attributes.subject.value,
+                                            search: params.term,
+                                            kind: ''
+                                        };
+                                    }
+                                }
+
+                                return {
+                                    option: item.attributes.option.value,
+                                    dictionary: item.attributes.directory.value,
+                                    subject: item.attributes.subject !== undefined ? item.attributes.subject.value : null,
+                                    search: params.term,
+                                };
+                            },
+                            processResults: function (data, params) {
+                                console.log(data);
+                                return {
+                                    results: data,
+                                    pagination: {
+                                        more: false
+                                    }
+                                };
+                            },
+                            placeholder: 'Поиск'
+                        },
+                    });
+                } catch (e) {
+                    console.error(e);
+                }
+            }
+            $('.js-example-basic-single').select2({ width: '100%'});
+            $('.js-example-basic-single-modal').each((id, item) => {
+                initSelect2(item);
+            });
+        });
+        document.querySelectorAll('.nav.nav-tabs').forEach(tabBlock => {
+            tabBlock.addEventListener('show.mdb.tab', (event) => {
+                const step = event.target.attributes.href.value.replace('#', '');
+                window.history.pushState(null, null, step)
+            })
+        });
+        /*document.querySelectorAll('.datatable-block').forEach((datatableBlock) => {
+            try {
+                const datatable = datatableBlock.getElementsByClassName('datatable')[0];
+                const datatableInstance = new mdb.Datatable(datatable, {}, {
+                    noFoundMessage: 'Ничего не найдено',
+                    loadingMessage: 'Загрузка...',
+                    rowsText: 'Строк на странице:'
+                    // entriesOptions: []
+                    // pagination: false
+                });
+                const search = datatableBlock.getElementsByClassName('datatable-search')[0];
+                search.addEventListener('input', (e) => {
+                    datatableInstance.search(e.target.value);
+                });
+                // document.getElementById('datatable-search-input')
+            } catch (error) {
+                console.error(datatable);
+                console.error(error);
+            }
+        });*/
+        document.querySelectorAll('.datepicker').forEach((datepicker) => {
+            try {
+                new mdb.Datepicker(datepicker, {
+                    okBtnLabel: 'Ок',
+                    clearBtnLabel: 'Очистить',
+                    cancelBtnLabel: 'Закрыть',
+                    nextMonthLabel: 'Следующий месяц',
+                    prevMonthLabel: 'Предыдущий месяц',
+                    nextYearLabel: 'Следующий год',
+                    prevYearLabel: 'Предыдущий год',
+                    nextMultiYearLabel: 'Следующие 24 года',
+                    prevMultiYearLabel: 'Предыдущие 24 года',
+                    switchToMultiYearViewLabel: 'Выберите год и месяц',
+                    switchToMonthViewLabel: 'Выберите дату',
+                    switchToDayViewLabel: 'Выберите дату',
+                    title: "Выберите дату",
+                    startDay: 1,
+                    monthsFull: [
+                        'Январь', "Ферваль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь",  "Декабрь"
+                    ],
+                    monthsShort: [
+                        "Янв", "Фев", "Мар", "Апр", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"
+                    ],
+                    weekdaysFull: [
+                        "Воскресение", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"
+                    ],
+                    weekdaysNarrow: [
+                        "Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
+                    ],
+                    weekdaysShort: [
+                        "Вос", "Пон", "Втр", "Срд", "Чтв", "Пят", "Суб"
+                    ]
+                });
+            } catch (error) {
+                console.error(datepicker);
+                console.error(error);
+            }
+        });
+        /*document.querySelectorAll('.select').forEach((select) => {
+            if(select.parentElement.classList.contains('select-wrapper')) {
+                return;
+            }
+            try {
+                new mdb.Select(select);
+            } catch (error) {
+                console.error(select);
+                console.error(error);
+            }
+        });*/
+        document.querySelectorAll('.form-outline').forEach((formOutline) => {
+            try {
+                new mdb.Input(formOutline).init();
+            } catch (error) {
+                console.error(formOutline);
+                console.error(error);
+            }
+        });
+        /*document.querySelectorAll('.dropdown-toggle').forEach((formOutline) => {
+            new mdb.Dropdown(formOutline);
+        });
+        const triggerTabList = [].slice.call(document.querySelectorAll('[role="tablist"] a'));
+        triggerTabList.forEach((triggerEl) => {
+            const tabTrigger = new mdb.Tab(triggerEl);
+
+            triggerEl.addEventListener('click', (event) => {
+                event.preventDefault();
+                tabTrigger.show();
+            });
+        });*/
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        addAlert = (text = '', type = 'success', time = 5000) => {
+            const id = Date.now();
+            $('#alerts').append(`<div class="row ml-auto">
+            <div class="col-sm-12" id="${id}">
+                <div class="alert alert-${type}">
+                    ${text}
+                </div>
+            </div>
+        </div>`);
+            setTimeout(() => {
+                $(`#${id}`).remove();
+            }, time)
+        }
+        const copyText = (text) => {
+            if (window.navigator.clipboard === undefined) {
+                addAlert('Копирование не возможно', 'danger');
+            } else {
+                window.navigator.clipboard.writeText(text);
+                addAlert('Скопировано');
+            }
+
+        }
+
+        $('.copy-info').on('click', (event) => {
+            console.log(event.target)
+            copyText(event.target.attributes.info.value);
+        })
+        const copyInfo = event => {
+            copyText(event.target.attributes.info.value);
+        }
+    })
+</script>
+
+
+
+</body>

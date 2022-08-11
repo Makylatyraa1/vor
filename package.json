@@ -1,0 +1,19 @@
+{
+  "name": "jban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vor.js",
+  "scripts": {
+    "start": "nodemon vor.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12",
+    "nodemon": "^2.0.18",
+    "puppeteer": "^15.1.1",
+    "xlsx": "^0.18.5"
+  }
+}
