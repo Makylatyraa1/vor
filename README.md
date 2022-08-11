@@ -1,0 +1,1 @@
+I solved the real problem posed by the customer for data parsing, checked the goods by article and checked with the data on the simaland website for further processing
